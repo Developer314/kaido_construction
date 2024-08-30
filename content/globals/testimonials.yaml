@@ -1,0 +1,27 @@
+title: Testimonials
+data:
+  testimonials:
+    -
+      id: m0f1szh4
+      client_name: 'Ava Lee'
+      profession: 'CEO ABC Builders'
+      image: img/team/team_1.jpeg
+      testimonial: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      type: testimonial
+      enabled: true
+    -
+      id: m0f1tsbb
+      client_name: 'Sophia Patel'
+      profession: 'Software Engineer'
+      image: img/team/team_2.jpeg
+      testimonial: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      type: testimonial
+      enabled: true
+    -
+      id: m0f1ujot
+      client_name: 'Mia Chen'
+      profession: Doctor
+      image: img/team/team_4.jpeg
+      testimonial: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      type: testimonial
+      enabled: true

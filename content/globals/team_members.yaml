@@ -1,0 +1,171 @@
+title: 'Team Members'
+data:
+  members:
+    -
+      id: m0euyuqb
+      name: 'Ethan Thompson'
+      designation: 'Project Manager'
+      image: img/team/team_1.jpeg
+      social_links:
+        -
+          id: m0euzuoz
+          icon: fa-facebook-f
+          url: 'https://www.linkedin.com/company/recolve-314-digital/'
+        -
+          id: m0euzw04
+          icon: fa-twitter
+          url: 'https://www.linkedin.com/company/recolve-314-digital/'
+        -
+          id: m0euzwop
+          icon: fa-linkedin-in
+          url: 'https://www.linkedin.com/company/recolve-314-digital/'
+        -
+          id: m0euzxd5
+          icon: fa-instagram
+          url: 'https://www.linkedin.com/company/recolve-314-digital/'
+      type: members
+      enabled: true
+    -
+      id: m0ev09jg
+      name: 'Liam Chen'
+      designation: 'Site Manager'
+      image: img/team/team_2.jpeg
+      social_links:
+        -
+          id: m0ev1ibt
+          icon: fa-facebook-f
+          url: 'https://www.linkedin.com/company/recolve-314-digital/'
+        -
+          id: m0ev1js6
+          icon: fa-twitter
+          url: 'https://www.linkedin.com/company/recolve-314-digital/'
+        -
+          id: m0ev1kns
+          icon: fa-linkedin-in
+          url: 'https://www.linkedin.com/company/recolve-314-digital/'
+        -
+          id: m0ev1lvc
+          icon: fa-instagram
+          url: 'https://www.linkedin.com/company/recolve-314-digital/'
+      type: members
+      enabled: true
+    -
+      id: m0ev1z7p
+      name: 'Noah Patel'
+      designation: 'Construction Manager'
+      image: img/team/team_3.jpeg
+      social_links:
+        -
+          id: m0ev2phl
+          icon: fa-facebook-f
+          url: 'https://www.linkedin.com/company/recolve-314-digital/'
+        -
+          id: m0ev2qcz
+          icon: fa-twitter
+          url: 'https://www.linkedin.com/company/recolve-314-digital/'
+        -
+          id: m0ev2r9v
+          icon: fa-linkedin-in
+          url: 'https://www.linkedin.com/company/recolve-314-digital/'
+        -
+          id: m0ev2sf1
+          icon: fa-instagram
+          url: 'https://www.linkedin.com/company/recolve-314-digital/'
+      type: members
+      enabled: true
+    -
+      id: m0ev2zed
+      name: 'Lucas Brooks'
+      designation: Supervisor
+      image: img/team/team_4.jpeg
+      social_links:
+        -
+          id: m0ev3x0r
+          icon: fa-facebook-f
+          url: 'https://www.linkedin.com/company/recolve-314-digital/'
+        -
+          id: m0ev3ycw
+          icon: fa-twitter
+          url: 'https://www.linkedin.com/company/recolve-314-digital/'
+        -
+          id: m0ev3zb4
+          icon: fa-linkedin-in
+          url: 'https://www.linkedin.com/company/recolve-314-digital/'
+        -
+          id: m0ev413y
+          icon: fa-instagram
+          url: 'https://www.linkedin.com/company/recolve-314-digital/'
+      type: members
+      enabled: true
+    -
+      id: m0ev47dc
+      name: 'Mason Lee'
+      designation: Foreman
+      image: img/team/team_5.jpeg
+      social_links:
+        -
+          id: m0ev4vbh
+          icon: fa-facebook-f
+          url: 'https://www.linkedin.com/company/recolve-314-digital/'
+        -
+          id: m0ev4w9y
+          icon: fa-twitter
+          url: 'https://www.linkedin.com/company/recolve-314-digital/'
+      type: members
+      enabled: true
+    -
+      id: m0ev505h
+      name: 'Alexander Gray'
+      designation: Architect
+      image: img/team/team_6.jpeg
+      social_links:
+        -
+          id: m0ev5nup
+          icon: fa-facebook-f
+          url: 'https://www.linkedin.com/company/recolve-314-digital/'
+      type: members
+      enabled: true
+    -
+      id: m0ev5pq0
+      name: 'Benjamin Brown'
+      designation: 'Quantity Surveyor'
+      image: img/team/team_7.jpeg
+      social_links:
+        -
+          id: m0ev6fin
+          icon: fa-facebook-f
+          url: 'https://www.linkedin.com/company/recolve-314-digital/'
+        -
+          id: m0ev6gkd
+          icon: fa-facebook-f
+          url: 'https://www.linkedin.com/company/recolve-314-digital/'
+        -
+          id: m0ev6hs7
+          icon: fa-facebook-f
+          url: 'https://www.linkedin.com/company/recolve-314-digital/'
+      type: members
+      enabled: true
+    -
+      id: m0ew4cnf
+      name: 'Amelia Martin'
+      designation: Designer
+      image: img/team/team_10.jpeg
+      social_links:
+        -
+          id: m0ew4xjl
+          icon: fa-facebook-f
+          url: 'https://www.linkedin.com/company/recolve-314-digital/'
+        -
+          id: m0ew4yyk
+          icon: fa-facebook-f
+          url: 'https://www.linkedin.com/company/recolve-314-digital/'
+        -
+          id: m0ew50cg
+          icon: fa-facebook-f
+          url: 'https://www.linkedin.com/company/recolve-314-digital/'
+        -
+          id: m0ew5189
+          icon: fa-facebook-f
+          url: 'https://www.linkedin.com/company/recolve-314-digital/'
+      type: members
+      enabled: true

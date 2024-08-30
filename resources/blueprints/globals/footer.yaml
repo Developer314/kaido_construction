@@ -1,0 +1,495 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: html
+            field:
+              default: |-
+                <!-- Footer Start -->
+                 <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+                    <div class="container py-5">
+                        <div class="row g-5">
+                            <div class="col-md-6 col-lg-6 col-xl-3">
+                                <div class="footer-item d-flex flex-column">
+                                    <div class="footer-item">
+                                        <h4 class="text-white mb-4">{{footer:newsletter_title}}</h4>
+                                        <p class="mb-3">{{footer:newsletter_form_description}}</p>
+                                        
+                                            
+                                            {{form:newsletter}}
+
+                                            {{ if success }}
+                                            <div class="text-success">
+                                                {{ footer:newsletter_success_message }}
+                                            </div>
+                                        {{ else }}
+                                           {{ if errors }}
+                                                <div class="text-danger mb-3">
+                                                    {{ errors }}
+                                                        {{ value }}<br>
+                                                    {{ /errors }}
+                                                </div>
+                                            {{ /if }}
+
+
+                                            <div class="position-relative mx-auto">
+
+                                            {{fields}}
+                                            <input name="{{handle}}" class="form-control w-100 py-3 ps-4 pe-5" type="{{input_type}}" placeholder="{{placeholder}}">
+                                            {{/fields}}
+                                            <button type="submit" class="btn btn-secondary position-absolute top-0 end-0 py-2 mt-2 me-2">{{footer:button_text}}</button>
+                                        </div>
+
+                                            {{/if}}
+                                            {{/form:newsletter}}
+                                           
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-xl-3">
+                                <div class="footer-item d-flex flex-column">
+                                    <h4 class="text-white mb-4">{{footer:column_2_title}}</h4>
+                                    {{footer:column_2_links}}
+                                    <a href="{{link}}" target="{{target}}" title="{{title}}"><i class="fas fa-angle-right me-2"></i> {{title}}</a>
+                                    {{/footer:column_2_links}}
+                                    
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-xl-3">
+                                <div class="footer-item d-flex flex-column">
+                                    <h4 class="text-white mb-4">{{footer:column_3_title}}</h4>
+                                    {{footer:column_3_links}}
+                                    <a href="{{link}}" target="{{target}}" title="{{title}}"><i class="fas fa-angle-right me-2"></i> {{title}}</a>
+                                    {{/footer:column_3_links}}
+                                    
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-xl-3">
+                                <div class="footer-item d-flex flex-column">
+                                    <h4 class="text-white mb-4">{{footer:column_4_title}}</h4>
+                                    {{footer:contact_details}}
+                                    <a href=""><i class="fa {{icon}} me-2"></i> {{data}}</a>
+                                    {{/footer:contact_details}}
+                                    
+                                    <div class="footer-btn d-flex align-items-center">
+                                        {{footer:social_links}}
+                                        <a class="btn btn-secondary btn-md-square me-2" href="{{url}}"><i class="fab {{icon}} text-white"></i></a>
+                                        {{/footer:social_links}}    
+                                    </div>
+                                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer End -->
+
+
+                <!-- Copyright Start -->
+                <div class="container-fluid copyright py-4">
+                    <div class="container">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-md-6 text-center text-md-start mb-md-0">
+                                {{footer:copyright}}
+                            </div>
+                            <div class="col-md-6 text-center text-md-end text-body">
+                                <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                                <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                                <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                                {{footer:credits}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Copyright End -->
+
+                <a href="#" class="btn btn-secondary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+                        
+                            <!-- JavaScript /assets/lib/raries -->
+                            <script src="https://ajax.googleapis.com/ajax//assets/lib/s/jquery/3.6.4/jquery.min.js"></script>
+                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+                            <script src="/assets/lib//wow/wow.min.js"></script>
+                            <script src="/assets/lib//easing/easing.min.js"></script>
+                            <script src="/assets/lib//waypoints/waypoints.min.js"></script>
+                            <script src="/assets/lib//counterup/counterup.min.js"></script>
+                            <script src="/assets/lib//owlcarousel/owl.carousel.min.js"></script>
+                            
+                        
+                            <!-- Template Javascript -->
+                            <script src="/assets/js/main.js"></script>
+                            </body>
+                        
+                        </html>
+              antlers: true
+              type: textarea
+              display: Html
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+  newsletter:
+    display: Newsletter
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            handle: newsletter_title
+            field:
+              input_type: text
+              default: Newsletter
+              antlers: false
+              type: text
+              display: 'Newsletter Title'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: newsletter_form_description
+            field:
+              default: "Stay ahead of the build with Kaido Construction's newsletter! Get exclusive updates on our latest projects, industry insights, and expert tips. From foundation to finish, we'll keep you informed on the latest trends and innovations in construction. Subscribe now and let's build a stronger future together!"
+              antlers: false
+              type: textarea
+              display: 'Newsletter Form Description'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: button_text
+            field:
+              input_type: text
+              default: 'Sign Up'
+              antlers: false
+              type: text
+              display: 'Button Text'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: newsletter_success_message
+            field:
+              default: 'Congratulations! You have successfully Subscribed to our Newsletter'
+              antlers: false
+              type: textarea
+              display: 'Newsletter Success Message'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+  footer_column_2:
+    display: 'Footer Column 2'
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            handle: column_2_title
+            field:
+              input_type: text
+              default: Explore
+              antlers: false
+              type: text
+              display: 'Column 2 Title'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: column_2_links
+            field:
+              fields:
+                -
+                  handle: title
+                  field:
+                    input_type: text
+                    default: Home
+                    antlers: false
+                    type: text
+                    display: Title
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
+                -
+                  handle: link
+                  field:
+                    input_type: text
+                    default: /
+                    antlers: false
+                    type: text
+                    display: Link
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
+                -
+                  handle: target
+                  field:
+                    options:
+                      _self: Self
+                      _blank: Blank
+                    taggable: false
+                    push_tags: false
+                    multiple: false
+                    clearable: false
+                    searchable: true
+                    cast_booleans: false
+                    default: _self
+                    type: select
+                    display: Target
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
+              mode: table
+              reorderable: true
+              fullscreen: true
+              type: grid
+              display: 'Column 2 Links'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+  footer_column_3:
+    display: 'Footer Column 3'
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            handle: column_3_title
+            field:
+              input_type: text
+              default: 'Our Services'
+              antlers: false
+              type: text
+              display: 'Column 3 Title'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: column_3_links
+            field:
+              fields:
+                -
+                  handle: title
+                  field:
+                    input_type: text
+                    default: Home
+                    antlers: false
+                    type: text
+                    display: Title
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
+                -
+                  handle: link
+                  field:
+                    input_type: text
+                    default: /
+                    antlers: false
+                    type: text
+                    display: Link
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
+                -
+                  handle: target
+                  field:
+                    options:
+                      _self: Self
+                      _blank: Blank
+                    taggable: false
+                    push_tags: false
+                    multiple: false
+                    clearable: false
+                    searchable: true
+                    cast_booleans: false
+                    default: _self
+                    type: select
+                    display: Target
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
+              mode: table
+              reorderable: true
+              fullscreen: true
+              type: grid
+              display: 'Column 3 Links'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+  footer_column_4:
+    display: 'Footer Column 4'
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            handle: column_4_title
+            field:
+              input_type: text
+              default: 'Contact Info'
+              antlers: false
+              type: text
+              display: 'Column 4 Title'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: contact_details
+            field:
+              fields:
+                -
+                  handle: icon
+                  field:
+                    options:
+                      fa-map-marker-alt: Map
+                      fa-envelope: Envelop
+                      fa-phone: Phone
+                      fa-print: Fax
+                    taggable: false
+                    push_tags: false
+                    multiple: false
+                    clearable: false
+                    searchable: true
+                    cast_booleans: false
+                    default: fa-map-marker-alt
+                    type: select
+                    display: iCon
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
+                -
+                  handle: data
+                  field:
+                    input_type: text
+                    default: 'Trivandrum, Kerala, India'
+                    antlers: false
+                    type: text
+                    display: Data
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
+              mode: table
+              reorderable: true
+              fullscreen: true
+              type: grid
+              display: 'Contact Details'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: social_links
+            field:
+              fields:
+                -
+                  handle: icon
+                  field:
+                    options:
+                      fa-facebook-f: Facebook
+                      fa-twitter: Twitter
+                      fa-instagram: Instagram
+                      fa-linkedin-in: 'Linked In'
+                    taggable: false
+                    push_tags: false
+                    multiple: false
+                    clearable: false
+                    searchable: true
+                    cast_booleans: false
+                    default: fa-facebook-f
+                    type: select
+                    display: Icon
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
+                -
+                  handle: url
+                  field:
+                    input_type: text
+                    default: 'https://www.linkedin.com/company/recolve-314-digital/'
+                    antlers: false
+                    type: text
+                    display: URL
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
+              mode: table
+              reorderable: true
+              fullscreen: true
+              type: grid
+              display: 'Social Links'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+  copyright:
+    display: Copyright
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            handle: copyright
+            field:
+              default: '<span class="text-body"><a href="/" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2">KAIDO</i></a>, All right reserved.</span>'
+              antlers: true
+              type: textarea
+              display: Copyright
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: credits
+            field:
+              default: 'Developed By <a class="border-bottom text-white" href="https://www.revolve314.com" target="_blank">Revolve 314 Digital</a>'
+              antlers: false
+              type: textarea
+              display: Credits
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false

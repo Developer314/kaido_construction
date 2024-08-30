@@ -1,0 +1,216 @@
+title: Service
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: icon
+            field:
+              options:
+                fa-home: Home
+                fa-users-cog: Users
+                fa-hospital-user: 'Hospital User'
+                fa-file-invoice-dollar: 'File Invoice Dollar'
+                fa-cogs: Cogs
+                fa-sitemap: Sitemap
+              taggable: false
+              push_tags: false
+              multiple: false
+              clearable: false
+              searchable: true
+              cast_booleans: false
+              default: fa-home
+              type: select
+              display: Icon
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: image
+            field:
+              max_files: 1
+              mode: list
+              container: assets
+              folder: img
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: Image
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: short_description
+            field:
+              default: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'
+              antlers: false
+              type: textarea
+              display: 'Short Description'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: long_description
+            field:
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - quote
+                - anchor
+                - image
+                - table
+                - h1
+                - h4
+                - h5
+                - h6
+                - underline
+                - strikethrough
+                - small
+                - superscript
+                - subscript
+                - code
+                - codeblock
+                - horizontalrule
+                - alignleft
+                - aligncenter
+                - alignright
+                - alignjustify
+              smart_typography: false
+              save_html: false
+              inline: false
+              toolbar_mode: fixed
+              reading_time: false
+              word_count: false
+              fullscreen: true
+              allow_source: true
+              enable_input_rules: true
+              enable_paste_rules: true
+              remove_empty_nodes: false
+              antlers: false
+              link_noopener: false
+              link_noreferrer: false
+              target_blank: false
+              always_show_set_button: false
+              collapse: false
+              previews: true
+              type: bard
+              display: 'Long Description'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: author
+            field:
+              type: users
+              display: Author
+              default: current
+              localizable: true
+              max_items: 1
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              localizable: true
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              replicator_preview: true
+              hide_partials: true
+              blueprint: false
+              hide_display: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+  seo:
+    display: SEO
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            handle: meta_title
+            field: seo.meta_title
+          -
+            handle: meta_keywords
+            field: seo.meta_keywords
+          -
+            handle: meta_description
+            field: seo.meta_description
+  block_types:
+    display: 'Block Types'
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            handle: content
+            field: content.content
+  banner:
+    display: Banner
+    sections:
+      -
+        display: Banner
+        fields:
+          -
+            handle: banner_title
+            field:
+              input_type: text
+              default: 'Architectural design'
+              antlers: false
+              type: text
+              display: 'Banner Title'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: banner_image
+            field:
+              max_files: 1
+              mode: list
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: 'Banner Image'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false

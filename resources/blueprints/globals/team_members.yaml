@@ -1,0 +1,123 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: members
+            field:
+              collapse: false
+              previews: true
+              fullscreen: true
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  instructions: null
+                  icon: null
+                  sets:
+                    members:
+                      display: Members
+                      instructions: null
+                      icon: user-avatar
+                      fields:
+                        -
+                          handle: name
+                          field:
+                            input_type: text
+                            default: 'Ethan Thompson'
+                            antlers: false
+                            type: text
+                            display: Name
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: designation
+                          field:
+                            input_type: text
+                            placeholder: Architect
+                            antlers: false
+                            type: text
+                            display: Designation
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: image
+                          field:
+                            max_files: 1
+                            mode: list
+                            container: assets
+                            folder: img/team
+                            restrict: false
+                            allow_uploads: true
+                            show_filename: true
+                            show_set_alt: true
+                            type: assets
+                            display: Image
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: social_links
+                          field:
+                            fields:
+                              -
+                                handle: icon
+                                field:
+                                  options:
+                                    fa-facebook-f: Facebook
+                                    fa-twitter: Twitter
+                                    fa-linkedin-in: 'Linked In'
+                                    fa-instagram: Instagram
+                                  taggable: false
+                                  push_tags: false
+                                  multiple: false
+                                  clearable: false
+                                  searchable: true
+                                  cast_booleans: false
+                                  default: fa-facebook-f
+                                  type: select
+                                  display: iCon
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  replicator_preview: true
+                                  hide_display: false
+                              -
+                                handle: url
+                                field:
+                                  input_type: text
+                                  default: 'https://www.linkedin.com/company/recolve-314-digital/'
+                                  antlers: false
+                                  type: text
+                                  display: Url
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  replicator_preview: true
+                                  hide_display: false
+                            mode: table
+                            reorderable: true
+                            fullscreen: true
+                            type: grid
+                            display: 'Social Links'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+              type: replicator
+              display: Members
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false

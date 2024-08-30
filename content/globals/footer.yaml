@@ -1,0 +1,238 @@
+title: Footer
+data:
+  html: |-
+    <!-- Footer Start -->
+     <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">{{footer:newsletter_title}}</h4>
+                            <p class="mb-3">{{footer:newsletter_form_description}}</p>
+                            
+                                
+                                {{form:newsletter}}
+
+                                {{ if success }}
+                                <div class="text-success">
+                                    {{ footer:newsletter_success_message }}
+                                </div>
+                            {{ else }}
+                               {{ if errors }}
+                                    <div class="text-danger mb-3">
+                                        {{ errors }}
+                                            {{ value }}<br>
+                                        {{ /errors }}
+                                    </div>
+                                {{ /if }}
+
+
+                                <div class="position-relative mx-auto">
+
+                                {{fields}}
+                                <input name="{{handle}}" class="form-control w-100 py-3 ps-4 pe-5" type="{{input_type}}" placeholder="{{placeholder}}">
+                                {{/fields}}
+                                <button type="submit" class="btn btn-secondary position-absolute top-0 end-0 py-2 mt-2 me-2">{{footer:button_text}}</button>
+                            </div>
+
+                                {{/if}}
+                                {{/form:newsletter}}
+                               
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-4">{{footer:column_2_title}}</h4>
+                        {{footer:column_2_links}}
+                        <a href="{{link}}" target="{{target}}" title="{{title}}"><i class="fas fa-angle-right me-2"></i> {{title}}</a>
+                        {{/footer:column_2_links}}
+                        
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-4">{{footer:column_3_title}}</h4>
+                        {{footer:column_3_links}}
+                        <a href="{{link}}" target="{{target}}" title="{{title}}"><i class="fas fa-angle-right me-2"></i> {{title}}</a>
+                        {{/footer:column_3_links}}
+                        
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-4">{{footer:column_4_title}}</h4>
+                        {{footer:contact_details}}
+                        <a href=""><i class="fa {{icon}} me-2"></i> {{data}}</a>
+                        {{/footer:contact_details}}
+                        
+                        <div class="footer-btn d-flex align-items-center">
+                            {{footer:social_links}}
+                            <a class="btn btn-secondary btn-md-square me-2" href="{{url}}"><i class="fab {{icon}} text-white"></i></a>
+                            {{/footer:social_links}}    
+                        </div>
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-md-0">
+                    {{footer:copyright}}
+                </div>
+                <div class="col-md-6 text-center text-md-end text-body">
+                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                    {{footer:credits}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+    <a href="#" class="btn btn-secondary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>    
+
+            
+                <!-- JavaScript /assets/lib/raries -->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+                <script src="/assets/lib//wow/wow.min.js"></script>
+                <script src="/assets/lib//easing/easing.min.js"></script>
+                <script src="/assets/lib//waypoints/waypoints.min.js"></script>
+                <script src="/assets/lib//counterup/counterup.min.js"></script>
+                <script src="/assets/lib//owlcarousel/owl.carousel.min.js"></script>
+                
+            
+                <!-- Template Javascript -->
+                <script src="/assets/js/main.js"></script>
+                </body>
+            
+            </html>
+  newsletter_title: Newsletter
+  newsletter_form_description: "Stay ahead of the build with Kaido Construction's newsletter! Get exclusive updates on our latest projects, industry insights, and expert tips. From foundation to finish, we'll keep you informed on the latest trends and innovations in construction. Subscribe now and let's build a stronger future together!"
+  button_text: 'Sign Up'
+  newsletter_success_message: 'Congratulations! You have successfully Subscribed to our Newsletter'
+  column_2_title: Explore
+  column_2_links:
+    -
+      id: m0djfmy7
+      title: Home
+      link: /
+      target: _self
+    -
+      id: m0djfnuo
+      title: Service
+      link: /
+      target: _self
+    -
+      id: m0djfp0d
+      title: 'About Us'
+      link: /
+      target: _self
+    -
+      id: m0djfqe8
+      title: 'Latest Projects'
+      link: /
+      target: _self
+    -
+      id: m0djfr41
+      title: Testimonial
+      link: /
+      target: _self
+    -
+      id: m0djggb0
+      title: 'Our Team'
+      link: /
+      target: _self
+    -
+      id: m0djgnam
+      title: 'Contact Us'
+      link: /
+      target: _self
+  column_3_title: 'Our Services'
+  column_3_links:
+    -
+      id: m0djla2y
+      title: 'General Contracting'
+      link: /
+      target: _self
+    -
+      id: m0djlb02
+      title: 'Pre-Construction Services'
+      link: /
+      target: _self
+    -
+      id: m0djlc30
+      title: 'Design-Build Services'
+      link: /
+      target: _self
+    -
+      id: m0djldjo
+      title: 'Construction Management'
+      link: /
+      target: _self
+    -
+      id: m0djlehq
+      title: 'Renovation and Remodeling'
+      link: /
+      target: _self
+    -
+      id: m0djlfge
+      title: 'New Building Construction'
+      link: /
+      target: _self
+    -
+      id: m0djnco0
+      title: 'Heavy Civil Construction'
+      link: /
+      target: _self
+  column_4_title: 'Contact Info'
+  contact_details:
+    -
+      id: m0dju9w5
+      icon: fa-map-marker-alt
+      data: 'Trivandrum, Kerala, India'
+    -
+      id: m0djud13
+      icon: fa-envelope
+      data: manup.rav@gmail.com
+    -
+      id: m0djudvj
+      icon: fa-envelope
+      data: manup.rgw@gmail.com
+    -
+      id: m0djueq8
+      icon: fa-phone
+      data: '+918907289865'
+    -
+      id: m0djug6m
+      icon: fa-print
+      data: '+918907289865'
+  social_links:
+    -
+      id: m0dk2nh8
+      icon: fa-facebook-f
+      url: 'https://www.linkedin.com/company/recolve-314-digital/'
+    -
+      id: m0dk2pee
+      icon: fa-twitter
+      url: 'https://www.linkedin.com/company/recolve-314-digital/'
+    -
+      id: m0dk2rqj
+      icon: fa-instagram
+      url: 'https://www.linkedin.com/company/recolve-314-digital/'
+    -
+      id: m0dk2srx
+      icon: fa-linkedin-in
+      url: 'https://www.linkedin.com/company/recolve-314-digital/'
+  copyright: '<span class="text-body"><a href="/" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2">KAIDO</i></a>, All right reserved.</span>'
+  credits: 'Developed By <a class="border-bottom text-white" href="https://www.revolve314.com" target="_blank">Revolve 314 Digital</a>'

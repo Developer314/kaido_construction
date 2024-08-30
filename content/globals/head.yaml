@@ -1,0 +1,102 @@
+title: Head
+data:
+  favicon: img/icons8-favicon-94.png
+  extra_scripts: '<!-- Extra Scripts -->'
+  html: |-
+    <!DOCTYPE html>
+    <html lang="{{ site:short_locale }}">
+
+        <head>
+            <meta charset="utf-8">
+            <title>{{meta_title}}</title>
+            <meta content="width=device-width, initial-scale=1.0" name="viewport">
+            <meta content="{{meta_keywords}}" name="keywords">
+            <meta content="{{meta_description}}" name="description">
+            <link rel="icon" type="image/png" href="{{head:favicon}}"/>
+            <!-- Google Web Fonts -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+            <!-- Icon Font Stylesheet -->
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+            <!-- Libraries Stylesheet -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+            <link href="/assets/lib/animate/animate.min.css" rel="stylesheet">
+            <link href="/assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+            <!-- Customized Bootstrap Stylesheet -->
+            <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+
+            <!-- Template Stylesheet -->
+            <link href="/assets/css/style.css" rel="stylesheet">
+            {{extra_scripts}}
+        </head>
+
+        <body>
+    {{head:navigation}}
+    {{head:search_form}}
+  logo: img/logo.png
+  logo_text: KAIDO
+  spinner_loading_text: Loading....
+  navigation: |-
+    <!-- Navbar & Hero Start -->
+     <div class="container-fluid sticky-top px-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-light py-3 px-4">
+            <a href="/" alt="{{title}}" class="navbar-brand p-0">
+                
+               <!-- <img src="{{ glide:head:logo preset="logo" }}
+    " alt="{{title}}">-->
+    <h1 class="text-secondary display-6"><i class="fas fa-shipping-fast text-primary me-3"></i>{{head:logo_text}}</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto pt-2 pt-lg-0">
+                    <a href="/" class="nav-item nav-link {{if slug=="home"}}active{{/if}}">Home</a>
+                    <a href="/about-us" class="nav-item nav-link {{if slug=="about"}}active{{/if}}">About</a>
+                    <a href="/services" class="nav-item nav-link {{if slug=="services"}}active{{/if}}">Services</a>
+                    <a href="/projects" class="nav-item nav-link {{if slug=="projects"}}active{{/if}}">Projects</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu m-lg-0">
+                            <a href="/features" class="dropdown-item {{if slug=="features"}}active{{/if}}">Our Features</a>
+                            <a href="/blog" class="dropdown-item {{if slug=="blog"}}active{{/if}}">Our Blog</a>
+                            <a href="/team" class="dropdown-item {{if slug=="team"}}active{{/if}}">Our Team</a>
+                            <a href="/testimonial" class="dropdown-item {{if slug=="testionial"}}active{{/if}}">Testimonial</a>
+                            
+                        </div>
+                    </div>
+                    <a href="/contact-us" class="nav-item nav-link {{if slug=="contact-us"}}active{{/if}}">Contact</a>
+                </div>
+                <div class="d-flex align-items-center flex-nowrap pt-3  pt-lg-0 ms-lg-2">
+                   <!-- <button class="btn btn-primary py-2 px-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>-->
+                    <a href="/get-a-quote" class="btn btn-secondary py-2 px-4 ms-3 flex-wrap flex-sm-shrink-0">Get a Quate</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar & Hero End -->
+  search_form: |-
+    <!-- Modal Search Start -->
+            <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content rounded-0">
+                        <div class="modal-header">
+                            <h4 class="modal-title mb-0" id="exampleModalLabel">Search by keyword</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body d-flex align-items-center">
+                            <form action="/search-resuts" id="site_search"  class="w-100" method="get">
+                            <div class="input-group w-75 mx-auto d-flex">
+                                <input type="search" class="form-control p-3" name="q" placeholder="keywords" aria-describedby="search-icon-1">
+                                <span id="search-icon-1" class="input-group-text p-3" onclick="document.getElementById('site_search').submit();"><i class="fa fa-search"></i></span>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal Search End -->

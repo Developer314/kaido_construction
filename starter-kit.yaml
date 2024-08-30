@@ -1,0 +1,10 @@
+export_paths:
+  - content
+  - config/statamic/assets.php
+  - resources/blueprints
+  - resources/views
+  - resources/fieldsets
+  - resources/forms
+  - resources/blueprints
+  - public/build
+  - public/assets

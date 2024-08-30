@@ -1,0 +1,86 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: testimonials
+            field:
+              collapse: false
+              previews: true
+              fullscreen: true
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  instructions: null
+                  icon: null
+                  sets:
+                    testimonial:
+                      display: Testimonial
+                      instructions: null
+                      icon: text-formatting-quotation
+                      fields:
+                        -
+                          handle: client_name
+                          field:
+                            input_type: text
+                            default: 'Ava Lee'
+                            antlers: false
+                            type: text
+                            display: 'Client Name'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: profession
+                          field:
+                            input_type: text
+                            default: 'CEO ABC Builders'
+                            antlers: false
+                            type: text
+                            display: Profession
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: image
+                          field:
+                            max_files: 1
+                            mode: list
+                            container: assets
+                            folder: img
+                            restrict: false
+                            allow_uploads: true
+                            show_filename: true
+                            show_set_alt: true
+                            type: assets
+                            display: Image
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: testimonial
+                          field:
+                            default: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                            antlers: false
+                            type: textarea
+                            display: Testimonial
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+              type: replicator
+              display: Testimonials
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false

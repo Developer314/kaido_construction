@@ -1,0 +1,72 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: name
+            field:
+              input_type: text
+              placeholder: 'Your Name'
+              antlers: false
+              type: text
+              display: Name
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: email
+            field:
+              input_type: email
+              antlers: false
+              type: text
+              display: Email
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              validate:
+                - required
+              placeholder: 'Your Email'
+          -
+            handle: phone
+            field:
+              input_type: text
+              placeholder: 'Your Phone'
+              antlers: false
+              type: text
+              display: Phone
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: project
+            field:
+              input_type: text
+              placeholder: 'Your Project'
+              antlers: false
+              type: text
+              display: Project
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: message
+            field:
+              placeholder: 'Your Message'
+              antlers: false
+              type: textarea
+              display: Message
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false

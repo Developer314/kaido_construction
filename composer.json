@@ -1,0 +1,9 @@
+{
+    "name": "my-vendor-name/kaido_construction",
+    "extra": {
+        "statamic": {
+            "name": "Kaido Construction",
+            "description": "Kaido Construction starter kit"
+        }
+    }
+}
