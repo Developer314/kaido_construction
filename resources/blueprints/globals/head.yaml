@@ -148,7 +148,7 @@ tabs:
                         <div class="collapse navbar-collapse" id="navbarCollapse">
                             <div class="navbar-nav ms-auto pt-2 pt-lg-0">
                                 <a href="/" class="nav-item nav-link {{if handle=="home"}}active{{/if}}">Home</a>
-                                <a href="/about-us" class="nav-item nav-link {{if handle=="about-us"}}active{{/if}}">About</a>
+                                <a href="/about" class="nav-item nav-link {{if handle=="about"}}active{{/if}}">About</a>
                                 <a href="/services" class="nav-item nav-link {{if handle=="services"}}active{{/if}}">Services</a>
                                 <a href="/projects" class="nav-item nav-link {{if handle=="projects"}}active{{/if}}">Projects</a>
                                 <div class="nav-item dropdown">
